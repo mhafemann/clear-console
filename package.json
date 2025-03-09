@@ -1,0 +1,30 @@
+{
+  "name": "@mhafemann/clear-console",
+  "description": "Clear console output",
+  "version": "1.0.0",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "author": {
+    "name": "Mark Hafemann",
+    "email": "markhafemann1@gmail.com"
+  },
+  "exports": {
+    "types": "./dist/index.d.ts",
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "type": "module",
+  "scripts": {
+    "build": "bun run build.ts",
+    "prepublishOnly": "bun run build"
+  },
+  "devDependencies": {
+    "@anymud/bun-plugin-dts": "^1.0.2",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "license": "ISC"
+}
